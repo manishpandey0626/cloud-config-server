@@ -7,3 +7,9 @@ eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${random.uuid}
+
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
